@@ -1,0 +1,1 @@
+# Ad-kotow-szkolenie-angular

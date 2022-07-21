@@ -3,6 +3,7 @@ import { Cat } from '../model';
 import { CatsDataService } from '../cats-data.service';
 import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
 
+
 @Component({
   selector: 'app-cats-detail-view',
   templateUrl: './cats-detail-view.component.html',
@@ -33,3 +34,4 @@ export class CatsDetailViewComponent implements OnInit {
     this.showConfirmMsg = success;
   }
 }
+

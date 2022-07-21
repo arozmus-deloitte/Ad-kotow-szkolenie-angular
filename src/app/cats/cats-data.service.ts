@@ -13,7 +13,7 @@ export class CatsDataService {
       name: 'Puszek',
       ageMonths: 8,
       breed: 'maine coon',
-      picUrl: 'puszek1.jpg',
+      picUrls: ['puszek1.jpg', 'cat-icon.png'],
       vaccination: true,
       funFact: "Ma bardzo miękkie futerko",
       adopted: false
@@ -22,7 +22,7 @@ export class CatsDataService {
       name: 'Mruczek',
       ageMonths: 36,
       breed: 'brytyjczyk',
-      picUrl: 'mruczek1.jpg',
+      picUrls: ['mruczek1.jpg', 'cat-icon.png'],
       vaccination: false,
       funFact: "Swoim mruczeniem potrafi obudzić domowników",
       adopted: false
@@ -31,7 +31,7 @@ export class CatsDataService {
       name: 'Kiciek',
       ageMonths: 52,
       breed: 'perski',
-      picUrl: 'kiciek.jpg',
+      picUrls: ['kiciek.jpg', 'cat-icon.png'],
       vaccination: true,
       funFact: "Świetny łowca",
       adopted: false
@@ -40,7 +40,7 @@ export class CatsDataService {
       name: 'Kłaczek',
       ageMonths: 81,
       breed: 'brytyjczyk',
-      picUrl: 'klaczek.jpg',
+      picUrls: ['klaczek.jpg', 'cat-icon.png'],
       vaccination: false,
       funFact: "Wbrew pozorom nie zostawia dużo futra",
       adopted: false
@@ -49,7 +49,7 @@ export class CatsDataService {
       name: 'Pimpuś',
       ageMonths: 6,
       breed: 'dachowiec',
-      picUrl: 'pimpus.jpg',
+      picUrls: ['pimpus.jpg', 'cat-icon.png'],
       vaccination: true,
       funFact: "Umie podawać łapę",
       adopted: false

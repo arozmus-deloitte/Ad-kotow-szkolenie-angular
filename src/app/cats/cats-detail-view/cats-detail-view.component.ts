@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Cat } from '../model';
 import { CatsDataService } from '../cats-data.service';
 import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
-
+import { NgImageSliderModule } from 'ng-image-slider';
 
 @Component({
   selector: 'app-cats-detail-view',
@@ -19,6 +19,7 @@ export class CatsDetailViewComponent implements OnInit {
   adoptionFormActive: boolean;
   showConfirmMsg: boolean;
   private route: ActivatedRouteSnapshot;
+  indexUrl: number = 0;
 
   ngOnInit(): void {
     const catName = this.route.params['catName'];
@@ -33,6 +34,22 @@ export class CatsDetailViewComponent implements OnInit {
     this.adoptionFormActive = false;
     this.showConfirmMsg = success;
     this.cat.adopted = true;
+  }
+
+  nextIndex(): void{
+    this.indexUrl++;
+    if(this.indexUrl > this.cat.picUrls.length - 1 )
+    {
+      this.indexUrl=0;
+    }
+  }
+
+  prevIndex(){
+    this.indexUrl--;
+    if(this.indexUrl < 0 )
+    {
+      this.indexUrl= this.cat.picUrls.length - 1 ;
+    }
   }
 }
 

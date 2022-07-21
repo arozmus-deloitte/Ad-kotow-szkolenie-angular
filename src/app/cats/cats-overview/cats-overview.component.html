@@ -21,6 +21,6 @@
 </section>
 
 <ng-template #catElement let-catInner="catInput">
-  <img src="./assets/cats-pic/{{catInner.picUrl}}" alt="" (click)="onClick(catInner)" matTooltip="{{catInner.funFact}}"
+  <img src="./assets/cats-pic/{{catInner.picUrls[0]}}" alt="" (click)="onClick(catInner)" matTooltip="{{catInner.funFact}}"
       matTooltipPosition='right'>
 </ng-template>

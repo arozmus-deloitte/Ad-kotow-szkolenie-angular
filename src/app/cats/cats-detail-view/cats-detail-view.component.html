@@ -1,6 +1,8 @@
 <section>
     <div class="side-by-side">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="">
+      <button class="slideBtn" (click) = "prevIndex()"><</button>
+        <img src="./assets/cats-pic/{{cat.picUrls[indexUrl]}}" alt="">
+        <button class="slideBtn" (click) = "nextIndex()">></button>
         <div class="cols">
             <span class="cats-name">{{cat.name}}</span>
             <span>{{cat.ageMonths}} miesięcy</span>
@@ -9,7 +11,6 @@
             <span *ngIf="cat.vaccination == false" id="notVaccinated">zaszczepiony: ✘  </span>
         </div>
     </div>
-
     <button (click)="openAdoptionForm()">adoptuj</button>
     <button routerLink="/cats">
         <span>{{'powrót'}}</span></button>

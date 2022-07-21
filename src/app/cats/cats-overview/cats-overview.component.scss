@@ -13,20 +13,26 @@
     max-width: 550px;
     border: solid 2px #444444;
     margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
   }
 
   #notAdopted {
-    max-width: 250px;
-    max-height: 250px;
-    border: solid 2px;
-    border-color: red;
+    img{
+      max-width: 250px;
+      max-height: 250px;
+      border: solid 2px;
+      border-color: red;
+    }
   }
 
   #adopted {
-    max-width: 250px;
-    max-height: 250px;
-    border: solid 2px;
-    border-color: green;
+    img{
+      max-width: 250px;
+      max-height: 250px;
+      border: solid 2px;
+      border-color: green;
+    }
   }
 
   .sortedBtn{
@@ -37,4 +43,5 @@
     float:left;
     align-self: center;
   }
+
 }

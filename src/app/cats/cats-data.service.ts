@@ -25,7 +25,7 @@ export class CatsDataService {
       picUrl: 'mruczek1.jpg',
       vaccination: false,
       funFact: "Swoim mruczeniem potrafi obudzić domowników",
-      adopted: true
+      adopted: false
     },
     {
       name: 'Kiciek',

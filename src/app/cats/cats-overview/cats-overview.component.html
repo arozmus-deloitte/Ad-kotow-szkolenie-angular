@@ -1,13 +1,19 @@
 <section>
-    <div class="listElement" *ngFor="let cat of cats">
-      <ng-container [ngSwitch]="cat.adopted">
-      <ng-container *ngSwitchCase = false>
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"  matTooltip="{{cat.funFact}}" matTooltipPosition='right' id="notAdopted">
-      </ng-container>
-      <ng-container *ngSwitchCase = true>
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"  matTooltip="{{cat.funFact}}" matTooltipPosition='right' id="adopted">
-      </ng-container>
-      </ng-container>
-        <span>{{cat.name}}</span>
+  <div class="catsInfo">
+    <div class = "buttons">
+      <button class = "sortedBtn" (click)="sortByName()">Sorted by name</button>
+      <button class = "sortedBtn" (click)="sortByBreed()">Sorted by breed</button>
     </div>
+      <div class="listElement" *ngFor="let cat of cats">
+        <ng-container [ngSwitch]="cat.adopted">
+        <ng-container *ngSwitchCase = false>
+          <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"  matTooltip="{{cat.funFact}}" matTooltipPosition='right' id="notAdopted">
+        </ng-container>
+        <ng-container *ngSwitchCase = true>
+          <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"  matTooltip="{{cat.funFact}}" matTooltipPosition='right' id="adopted">
+        </ng-container>
+        </ng-container>
+          <span>{{cat.name}}, {{cat.breed}}</span><br>
+      </div>
+  </div>
 </section>

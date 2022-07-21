@@ -2,7 +2,12 @@
 
   background-color: #fcfacd;
   display: block;
+  margin: 0;
 
+  .catsInfo{
+    flex-direction: column;
+    display: flex;
+  }
 
   .listElement {
     max-width: 550px;
@@ -22,5 +27,14 @@
     max-height: 250px;
     border: solid 2px;
     border-color: green;
+  }
+
+  .sortedBtn{
+  justify-content:flex-end;
+  }
+
+  .buttons{
+    float:left;
+    align-self: center;
   }
 }

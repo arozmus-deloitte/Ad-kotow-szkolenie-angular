@@ -20,3 +20,4 @@ zadanie 5:
 zmienić pojedyczne zdjęcie kota w widoku szczegółowym na kolekcję,
 dodać przewijanie zdjęć przyciskami
 wydzielić obsługę obrazków wraz z przewijaniem do nowego komponentu
+ 

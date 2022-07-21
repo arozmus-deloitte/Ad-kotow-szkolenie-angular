@@ -15,7 +15,8 @@ export class CatsDataService {
       breed: 'maine coon',
       picUrl: 'puszek1.jpg',
       vaccination: true,
-      funFact: "Ma bardzo miękkie futerko"
+      funFact: "Ma bardzo miękkie futerko",
+      adopted: false
     },
     {
       name: 'Mruczek',
@@ -23,7 +24,8 @@ export class CatsDataService {
       breed: 'brytyjczyk',
       picUrl: 'mruczek1.jpg',
       vaccination: false,
-      funFact: "Swoim mruczeniem potrafi obudzić domowników"
+      funFact: "Swoim mruczeniem potrafi obudzić domowników",
+      adopted: true
     },
     {
       name: 'Kiciek',
@@ -31,7 +33,8 @@ export class CatsDataService {
       breed: 'perski',
       picUrl: 'kiciek.jpg',
       vaccination: true,
-      funFact: "Świetny łowca"
+      funFact: "Świetny łowca",
+      adopted: false
     },
     {
       name: 'Kłaczek',
@@ -39,7 +42,8 @@ export class CatsDataService {
       breed: 'brytyjczyk',
       picUrl: 'klaczek.jpg',
       vaccination: false,
-      funFact: "Wbrew pozorom nie zostawia dużo futra"
+      funFact: "Wbrew pozorom nie zostawia dużo futra",
+      adopted: false
     },
     {
       name: 'Pimpuś',
@@ -47,7 +51,8 @@ export class CatsDataService {
       breed: 'dachowiec',
       picUrl: 'pimpus.jpg',
       vaccination: true,
-      funFact: "Umie podawać łapę"
+      funFact: "Umie podawać łapę",
+      adopted: false
     }
   ];
 

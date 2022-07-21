@@ -1,6 +1,13 @@
 <section>
     <div class="listElement" *ngFor="let cat of cats">
-        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"  matTooltip="{{cat.funFact}}" matTooltipPosition='right'>
+      <ng-container [ngSwitch]="cat.adopted">
+      <ng-container *ngSwitchCase = false>
+        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"  matTooltip="{{cat.funFact}}" matTooltipPosition='right' id="notAdopted">
+      </ng-container>
+      <ng-container *ngSwitchCase = true>
+        <img src="./assets/cats-pic/{{cat.picUrl}}" alt="" (click)="onClick(cat)"  matTooltip="{{cat.funFact}}" matTooltipPosition='right' id="adopted">
+      </ng-container>
+      </ng-container>
         <span>{{cat.name}}</span>
     </div>
 </section>

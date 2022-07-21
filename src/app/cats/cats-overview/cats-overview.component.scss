@@ -10,8 +10,17 @@
     margin: 20px 0 20px 0;
   }
 
-  img {
+  #notAdopted {
     max-width: 250px;
     max-height: 250px;
+    border: solid 2px;
+    border-color: red;
+  }
+
+  #adopted {
+    max-width: 250px;
+    max-height: 250px;
+    border: solid 2px;
+    border-color: green;
   }
 }
